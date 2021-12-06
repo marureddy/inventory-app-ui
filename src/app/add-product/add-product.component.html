@@ -1,1 +1,10 @@
-<p>add-product works!</p>
+<p>add product!</p>
+<form [formGroup]="productFG" (ngSubmit)="onSubmit()" novalidate>
+	<mat-form-field>
+	<mat-label>Product name</mat-label>
+	<input  matInput  formControlName="firstname" placeholder="">
+	<mat-label>quantity</mat-label>
+	<input matInput  formControlName="firstname"  placeholder="">
+	</mat-form-field>
+	<button>Submit</button>
+<form>
